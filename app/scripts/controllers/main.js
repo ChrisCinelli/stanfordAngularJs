@@ -19,15 +19,9 @@ angular.module('yahtzeeApp')
         $scope.dices = dices;
     }
 
-    var rules = [
+    $scope.rules = [
       //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
-      {name: 'one', compute: function(dices){return dices.reduce(function(sum, el){return sum + (el == 1 ? 1 : 0)}, 0)}},
+      {name: 'Ones', compute: function(dices){return dices.reduce(function(sum, el){return sum + (el == 1 ? 1 : 0)}, 0)}},
     ];
-
-    //Just for debug:
-    for (var i in rules) {
-        var rule = rules[i];
-        console.log(rule.name, rule.compute($scope.dices));
-    }
 
   }]);

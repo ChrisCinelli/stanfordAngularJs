@@ -5,4 +5,20 @@
   <div class="dice" ng-repeat="dice in dices track by $index">{{dice}}</div>
   <button class="btn btn-primary" ng-click="roll()">Roll Dices</button>
 
+  <h4>Potential Scores</h4>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rule</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="rule in rules">
+        <td>{{rule.name}}</td>
+        <td>{{rule.compute(dices)}}</td>
+      </tr>      
+    </tbody>
+  </table>
+
 </div>

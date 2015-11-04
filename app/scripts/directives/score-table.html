@@ -1,0 +1,14 @@
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Rule</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="rule in rules">
+        <td>{{rule.name}}</td>
+        <td>{{rule.compute(dices)}}</td>
+      </tr>    
+    </tbody>
+  </table>

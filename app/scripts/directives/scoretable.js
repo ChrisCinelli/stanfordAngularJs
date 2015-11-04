@@ -6,13 +6,10 @@
  * @description
  * # scoreTable
  */
-angular.module('stanfordAngularJsApp')
+angular.module('yahtzeeApp')
   .directive('scoreTable', function () {
     return {
-      template: '<div></div>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the scoreTable directive');
-      }
+      templateUrl: 'scripts/directives/score-table.html',
+      restrict: 'E'
     };
   });

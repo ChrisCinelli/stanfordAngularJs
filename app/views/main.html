@@ -6,7 +6,7 @@
   <button class="btn btn-primary" ng-click="roll()">Roll Dices</button>
 
   <h4>Potential Scores</h4>
-  <score-table dices=dices rules=rules></score-table>
+  <score-table dices=dices rules=rules1></score-table>
 
   <table class="table table-hover">
     <thead>
@@ -18,9 +18,12 @@
     <tbody>
       <tr>
         <td>SUM</td>
-        <td>{{ sumRules(rules, dices) }}</td>
+        <td>{{ sumRules(rules1, dices) }}</td>
       </tr>     
     </tbody>
   </table>
+
+  <score-table dices=dices rules=rules2></score-table>
+
 
 </div>

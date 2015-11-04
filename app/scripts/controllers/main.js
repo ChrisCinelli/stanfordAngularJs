@@ -29,7 +29,7 @@ angular.module('yahtzeeApp')
         return rules.reduce(function(sum, rule){return sum + rule.compute(dices);}, 0);
     }
 
-    $scope.rules = [
+    $scope.rules1 = [
       //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
       {name: 'Ones',   compute: countX(1)},
       {name: 'Twos',   compute: countX(2)},
@@ -38,5 +38,12 @@ angular.module('yahtzeeApp')
       {name: 'Fives',  compute: countX(5)},
       {name: 'Sixes',  compute: countX(6)},                    
     ];
+
+    $scope.rules2 = [
+      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+      {name: 'Ones',   compute: countX(1)},
+      {name: 'Twos',   compute: countX(2)},
+      {name: 'Threes', compute: countX(3)},                 
+    ];    
 
   }]);

@@ -17,7 +17,11 @@
       <tr ng-repeat="rule in rules">
         <td>{{rule.name}}</td>
         <td>{{rule.compute(dices)}}</td>
-      </tr>      
+      </tr> 
+      <tr>
+        <td>SUM</td>
+        <td>{{ rules.reduce(function(sum, rule){return sum + rule.compute(dices);}, 0) }}</td>
+      </tr>     
     </tbody>
   </table>
 

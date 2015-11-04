@@ -46,7 +46,7 @@ In practice, keep the default except:
   * Add angular-messages
 
 ### In a hurry? 
-  You can skip the "Get Ready". Just clone this repo and run `npm install` and `bower install`.
+  You can skip the "Get Ready". Just clone this repo and run `git checkout start-here`, `npm install` and `bower install`.
 
 ## Questions?
   Send me an email [here](mailto:chris@allestelle.com).

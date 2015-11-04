@@ -11,6 +11,10 @@ Install Node Version Manager (`nvm` - https://github.com/creationix/nvm ) with:
 
 This let you work with different version of node. 
 
+Now for simplicity sake...
+CLOSE YOUR SHELL and open a new one. 
+`nvm` will not work i nthe shell you installed from.
+
 Install node 4.2.1:
 
     nvm install 4.2.1

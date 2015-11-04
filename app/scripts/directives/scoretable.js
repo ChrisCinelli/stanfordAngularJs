@@ -9,6 +9,10 @@
 angular.module('yahtzeeApp')
   .directive('scoreTable', function () {
     return {
+      scope: {
+        rules: '=rules',
+        dices: '=dices'
+      },
       templateUrl: 'scripts/directives/score-table.html',
       restrict: 'E'
     };

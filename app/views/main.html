@@ -1,11 +1,7 @@
 <div class="row marketing">
-  <h4>Let's test the magic</h4>
+  <h4>Let's play!</h4>
 
-  <div>
-    Whatever you enter here: <input ng-model="anInput">
-  </div>
-  <div>
-    It is going here: "{{anInput}}"
-  </div>
+  Dices: 
+  <div class="dice" ng-repeat="dice in dices track by $index">{{dice}}</div>
 
 </div>

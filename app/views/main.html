@@ -20,7 +20,7 @@
       </tr> 
       <tr>
         <td>SUM</td>
-        <td>{{ rules.reduce(function(sum, rule){return sum + rule.compute(dices);}, 0) }}</td>
+        <td>{{ sumRules(rules, dices) }}</td>
       </tr>     
     </tbody>
   </table>
